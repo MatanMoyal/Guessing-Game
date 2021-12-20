@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<title>Guessing Game</title>
+	<link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+	<div>
+		<h1> Guessing Game </h1>
+    <div class="buttons">
+		<button id="new_game" class="help-button">New Game</button>
+    <button data-modal-target="#modal" class="help-button" id="Instructions ">Instructions</button>
+
+    <div class="modal" id="modal">
+      <div class="modal-header">
+        <div class="title">Instructions</div>
+        <button data-close-button class= "close-button">&times;</button>
+
+      </div>
+      <div class = "modal-body">
+       1.Remember your picture <br>
+       2.Find your picture between the next 9 squares <br>
+       3.If you dont press on none of the sqaures over 30sec you lose the game <br>
+       4.ENJOY!! <br>
+
+      </div>
+    </div>
+    
+    <div class"active" id="overlay"></div>
+  </div>
+
+
+    <div class="whole-img">
+       <h3 id="message"></h3>
+      <div id ="container2"> 
+        <div class="flex-items">
+          <img src="" alt="" class="square">
+          <img src="" alt="" class="square">
+          <img src="" alt="" class="square"> 
+          <img src="" alt="" class="square">
+          <img src="" alt="" class="square">
+          <img src="" alt="" class="square">
+          <img src="" alt="" class="square">
+          <img src="" alt="" class="square">
+          <img src="" alt="" class="square">
+          <img src="" alt="" class="square">
+          </div>
+          
+      </div>
+    </div> 
+    <script src="script.js"></script>
+</body>
+</html>
